@@ -1,0 +1,10 @@
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication\bin\Debug\netcoreapp2.0\ConsoleApplication.deps.json
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication\bin\Debug\netcoreapp2.0\ConsoleApplication.runtimeconfig.json
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication\bin\Debug\netcoreapp2.0\ConsoleApplication.runtimeconfig.dev.json
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication\bin\Debug\netcoreapp2.0\ConsoleApplication.dll
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication\bin\Debug\netcoreapp2.0\ConsoleApplication.pdb
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication\obj\Debug\netcoreapp2.0\ConsoleApplication.csproj.CoreCompileInputs.cache
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication\obj\Debug\netcoreapp2.0\ConsoleApplication.AssemblyInfoInputs.cache
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication\obj\Debug\netcoreapp2.0\ConsoleApplication.AssemblyInfo.cs
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication\obj\Debug\netcoreapp2.0\ConsoleApplication.dll
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication\obj\Debug\netcoreapp2.0\ConsoleApplication.pdb
