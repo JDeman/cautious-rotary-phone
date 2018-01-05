@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ConsoleApplication
 {
@@ -23,17 +25,31 @@ namespace ConsoleApplication
             Console.WriteLine("Car is turning left!");
         }
 
-        public void LoadPeople(int nbPeople)
+        public void LoadPeople(IDude dude)
         {
-            if (CurrentPassengers + nbPeople > PersonCap)
+            if (CurrentPassengers + 1 > PersonCap)
             {
-                Console.WriteLine("Not enough space in the ride for " + nbPeople +
-                                  " more dudes, Ya'll have to walk!");
+                Console.WriteLine("Not enough space in the ride for 1 more dude, You have to walk!");
             }
             else
             {
-                CurrentPassengers += nbPeople;
-                Console.WriteLine(nbPeople + " dudes loaded in car");
+                CurrentPassengers ++;
+                Console.WriteLine("1 dude loaded in car");
+            }
+        }
+
+        public void LoadPeople(IEnumerable<IDude> dudesList)
+        {
+            var enumerable = dudesList.ToList();
+            if (CurrentPassengers + enumerable.Count() > PersonCap)
+            {
+                Console.WriteLine("Not enough space in the ride for " + enumerable.Count() +
+                                                  " more dudes, Ya'll have to walk!");
+            }
+            else
+            {
+                CurrentPassengers += enumerable.Count();
+                Console.WriteLine(enumerable.Count() + " dudes loaded in car");
             }
         }
 

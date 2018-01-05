@@ -1,4 +1,6 @@
-﻿namespace ConsoleApplication
+﻿using System.Collections.Generic;
+
+namespace ConsoleApplication
 {
     public interface IVehicle
     {
@@ -13,7 +15,8 @@
         
         void TurnRight();
         void TurnLeft();
-        void LoadPeople(int nbPeople);
+        void LoadPeople(IDude dude);
+        void LoadPeople(IEnumerable<IDude> dudesList);
         void Explode();
         void Yolo();
     }
