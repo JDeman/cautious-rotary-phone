@@ -27,7 +27,7 @@ namespace ConsoleApplication
         {
             if (CurrentPassengers + nbPeople > PersonCap)
             {
-                Console.WriteLine("Not enough space in the ride for "+ nbPeople +
+                Console.WriteLine("Not enough space in the ride for " + nbPeople +
                                   " more dudes, Ya'll have to walk!");
             }
             else
@@ -40,7 +40,12 @@ namespace ConsoleApplication
         public void Explode()
         {
             IsDead = true;
-            Console.WriteLine("boooom !! " + CurrentPassengers +" dudes dead in the explosion !!");
+            Console.WriteLine("boooom !! " + CurrentPassengers + " dudes dead in the explosion !!");
+        }
+
+        public void Yolo()
+        {
+            Console.WriteLine("yolo");
         }
     }
 }
