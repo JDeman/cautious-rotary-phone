@@ -5,9 +5,9 @@
     <e p="C:\Users\julien\RiderProjects\ConsoleApplication" t="IncludeFlat">
       <e p="ConsoleApplication" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Car.cs" t="Include" />
+        <e p="Boat.cs" t="Include" />
         <e p="ConsoleApplication.csproj" t="IncludeRecursive" />
-        <e p="ICar.cs" t="Include" />
+        <e p="IVehicle.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.0" t="Include">
@@ -16,6 +16,7 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Vehicle.cs" t="Include" />
       </e>
       <e p="ConsoleApplication.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

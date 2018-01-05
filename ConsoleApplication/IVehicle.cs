@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApplication
 {
-    public interface ICar
+    public interface IVehicle
     {
         int MaxSpeed { get; set; }
         int Weight { get; set; }
@@ -15,5 +15,6 @@
         void TurnLeft();
         void LoadPeople(int nbPeople);
         void Explode();
+        void Yolo();
     }
 }

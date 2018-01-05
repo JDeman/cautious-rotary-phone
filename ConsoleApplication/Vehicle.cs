@@ -2,7 +2,7 @@
 
 namespace ConsoleApplication
 {
-    public class Car : ICar
+    public class Car : IVehicle
     {
         public int MaxSpeed { get; set; }
         public int Weight { get; set; } = 1200;

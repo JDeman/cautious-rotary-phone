@@ -6,7 +6,7 @@ namespace ConsoleApplication
     {
         private static void Main(string[] args)
         {
-            ICar ride = new Car();
+            IVehicle ride = new Car();
             Console.WriteLine("Type of ride object is => " + ride.Brand);
             if (ride.Brand == null) Console.WriteLine("Car has no Brand wtf");
             ride.PersonCap = 3;
@@ -17,6 +17,7 @@ namespace ConsoleApplication
             ride.TurnLeft();
             ride.TurnRight();
             ride.Explode();
+            ride.Yolo();
 
             Console.WriteLine("End.");
         }
