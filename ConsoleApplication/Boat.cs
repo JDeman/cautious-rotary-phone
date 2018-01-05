@@ -14,6 +14,12 @@ namespace ConsoleApplication
         public int CurrentPassengers { get; set; }
         public bool IsDead { get; set; }
 
+        public void waketch()
+        {
+            Console.WriteLine("sadewiz");
+            Console.WriteLine("wanamatcha");
+        }
+
         public void TurnRight()
         {
             Console.WriteLine("Boat is turning right!");
