@@ -9,6 +9,7 @@
         string Nationality { get; set; }
         string NativeLanguage { get; set; }
 
+        void WeightCheck();
         void Greet();
     }
 }

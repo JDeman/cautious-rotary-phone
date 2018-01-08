@@ -9,19 +9,39 @@ namespace ConsoleApplication
         {
             IVehicle ride = new Car();
             IVehicle boat = new Boat();
-            IDude joe = new Dude();
-            IDude Mike = new Dude();
-            IDude Randy = new Dude();
-            IList<IDude> dudelist = new List<IDude>();
-            dudelist.Add(Mike);
-            dudelist.Add(Randy);
             
-            Console.WriteLine("Type of ride object is => " + ride.Brand);
-            if (ride.Brand == null) Console.WriteLine("Car has no Brand wtf");
-            ride.PersonCap = 3;
+            /******** dudes creation ********/
+            IDude joe = new Dude();
+            joe.Nationality = "Canadian";
+            joe.Name = "Joe Black";
+            IDude mike = new Dude();
+            mike.Nationality = "French";
+            mike.Name = "Mike Parson";
+            mike.Weight = 105;
+            IDude randy = new Dude();
+            randy.Nationality = "German";
+            randy.Name = "Randy Jackson";
+            randy.Weight = 124;
+            /********************************/
+
+            for (int i = 0; i < 80; i++)
+            {
+                Console.WriteLine("is is " +i );
+            }
+            
+            /********************************/
+            
+            IList<IDude> dudelist = new List<IDude>();
+            
+            dudelist.Add(mike);
+            dudelist.Add(randy);
+            
+            randy.Greet(); randy.WeightCheck();
+            joe.Greet(); joe.WeightCheck();
+            mike.Greet(); mike.WeightCheck();
+            
             Console.WriteLine("boat is a " + boat.Brand + " " + boat.Model + 
                               " and can hold " + boat.PersonCap + " dudes");
-            Console.WriteLine("Hello Dudes, Ya'll want a ride ?");
 
             ride.LoadPeople(joe);
             ride.LoadPeople(dudelist);

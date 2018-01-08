@@ -54,11 +54,11 @@ namespace ConsoleApplication
         }
 
         public void Explode()
-        {
+        {    
             IsDead = true;
             Console.WriteLine("boooom !! " + CurrentPassengers + " dudes dead in the explosion !!");
         }
-
+        
         public void Yolo()
         {
             Console.WriteLine("yolo");

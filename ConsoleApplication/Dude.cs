@@ -7,13 +7,23 @@ namespace ConsoleApplication
         public string Name { get; set; }
         public int Age { get; set; }
         public string Gender { get; set; }
-        public int Weight { get; set; }
+        public int Weight { get; set; } = 80;
         public string Nationality { get; set; }
         public string NativeLanguage { get; set; }
 
         public void Greet()
         {
-            Console.WriteLine("Hello I'm " +Name+ ", I'm " + Nationality + ", nice to meet you.");
+            Console.WriteLine("Hello I'm " + Name + ", I'm " + Nationality + ", nice to meet you.");
+        }
+
+        public void WeightCheck()
+        {
+            if (Weight > 120)
+                Console.WriteLine(Name + " is bigger than Mobby Dick.");
+            else if (Weight >= 100)
+                Console.WriteLine(Name + " you need to drop some pounds.");
+            else
+                Console.WriteLine(Name + " is in good shape.");
         }
     }
 }

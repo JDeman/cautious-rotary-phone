@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -15,12 +14,6 @@ namespace ConsoleApplication
         public string WheelSide { get; set; } = "center";
         public int CurrentPassengers { get; set; }
         public bool IsDead { get; set; }
-
-        public void waketch()
-        {
-            Console.WriteLine("sadewiz");
-            Console.WriteLine("wanamatcha");
-        }
 
         public void TurnRight()
         {
@@ -40,11 +33,11 @@ namespace ConsoleApplication
             }
             else
             {
-                CurrentPassengers ++;
+                CurrentPassengers++;
                 Console.WriteLine("1 dude loaded in boat");
             }
         }
-        
+
         public void LoadPeople(IEnumerable<IDude> dudesList)
         {
             var enumerable = dudesList.ToList();
@@ -69,6 +62,12 @@ namespace ConsoleApplication
         public void Yolo()
         {
             Console.WriteLine("Yolo Boat implementation");
+        }
+
+        public void waketch()
+        {
+            Console.WriteLine("sadewiz");
+            Console.WriteLine("wanamatcha");
         }
     }
 }
