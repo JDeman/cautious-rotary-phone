@@ -9,7 +9,7 @@ namespace ConsoleApplication
         {
             IVehicle ride = new Car();
             IVehicle boat = new Boat();
-            
+
             /******** dudes creation ********/
             IDude joe = new Dude();
             joe.Nationality = "Canadian";
@@ -24,23 +24,23 @@ namespace ConsoleApplication
             randy.Weight = 124;
             /********************************/
 
-            for (int i = 0; i < 80; i++)
-            {
-                Console.WriteLine("is is " +i );
-            }
-            
+            for (var i = 0; i < 80; i++) Console.WriteLine("is is " + i);
+
             /********************************/
-            
+
             IList<IDude> dudelist = new List<IDude>();
-            
+
             dudelist.Add(mike);
             dudelist.Add(randy);
-            
-            randy.Greet(); randy.WeightCheck();
-            joe.Greet(); joe.WeightCheck();
-            mike.Greet(); mike.WeightCheck();
-            
-            Console.WriteLine("boat is a " + boat.Brand + " " + boat.Model + 
+
+            randy.Greet();
+            randy.WeightCheck();
+            joe.Greet();
+            joe.WeightCheck();
+            mike.Greet();
+            mike.WeightCheck();
+
+            Console.WriteLine("boat is a " + boat.Brand + " " + boat.Model +
                               " and can hold " + boat.PersonCap + " dudes");
 
             ride.LoadPeople(joe);
@@ -50,13 +50,18 @@ namespace ConsoleApplication
             ride.Explode();
 
             Console.WriteLine("**********************");
-            
+
             boat.LoadPeople(joe);
             boat.LoadPeople(dudelist);
             boat.TurnLeft();
             boat.TurnRight();
             boat.Explode();
-           
+
+            foreach (var n in dudelist)
+                if (n.Job == Jobs.Unemployed)
+                    Console.WriteLine(n.Name + " is an " + n.Job + " sucker.");
+                else
+                    Console.WriteLine(n.Name + " is a " + n.Job + ".");
 
             Console.WriteLine("End.");
         }

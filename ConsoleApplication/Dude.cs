@@ -10,6 +10,8 @@ namespace ConsoleApplication
         public int Weight { get; set; } = 80;
         public string Nationality { get; set; }
         public string NativeLanguage { get; set; }
+        public Jobs Job { get; set; } = Jobs.Unemployed;
+
 
         public void Greet()
         {

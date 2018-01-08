@@ -11,6 +11,7 @@
         <e p="Dude.cs" t="Include" />
         <e p="IDude.cs" t="Include" />
         <e p="IVehicle.cs" t="Include" />
+        <e p="Jobs.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.0" t="Include">
