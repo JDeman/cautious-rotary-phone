@@ -1,0 +1,13 @@
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication.UnitTests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication.UnitTests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication.UnitTests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication.UnitTests\bin\Debug\netcoreapp2.0\ConsoleApplication.UnitTests.deps.json
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication.UnitTests\bin\Debug\netcoreapp2.0\ConsoleApplication.UnitTests.runtimeconfig.json
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication.UnitTests\bin\Debug\netcoreapp2.0\ConsoleApplication.UnitTests.runtimeconfig.dev.json
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication.UnitTests\bin\Debug\netcoreapp2.0\ConsoleApplication.UnitTests.dll
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication.UnitTests\bin\Debug\netcoreapp2.0\ConsoleApplication.UnitTests.pdb
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication.UnitTests\obj\Debug\netcoreapp2.0\ConsoleApplication.UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication.UnitTests\obj\Debug\netcoreapp2.0\ConsoleApplication.UnitTests.AssemblyInfoInputs.cache
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication.UnitTests\obj\Debug\netcoreapp2.0\ConsoleApplication.UnitTests.AssemblyInfo.cs
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication.UnitTests\obj\Debug\netcoreapp2.0\ConsoleApplication.UnitTests.dll
+C:\Users\julien\RiderProjects\ConsoleApplication\ConsoleApplication.UnitTests\obj\Debug\netcoreapp2.0\ConsoleApplication.UnitTests.pdb

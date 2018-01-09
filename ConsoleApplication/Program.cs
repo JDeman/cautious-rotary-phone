@@ -57,6 +57,8 @@ namespace ConsoleApplication
             boat.TurnRight();
             boat.Explode();
 
+            if (boat.Brand != null) Console.WriteLine("boat brand is not null");
+
             foreach (var n in dudelist)
                 if (n.Job == Jobs.Unemployed)
                     Console.WriteLine(n.Name + " is an " + n.Job + " sucker.");
