@@ -7,7 +7,7 @@ namespace ConsoleApplication
 {
     public class Car : IVehicle
     {
-        public IList<IDude> CurrentPassengers { get; set; }
+        public IList<IDude> CurrentPassengers { get; set; } = new List<IDude>();
         public int MaxSpeed { get; set; }
         public int Weight { get; set; } = 1200;
         public int PersonCap { get; set; } = 5;
@@ -29,7 +29,7 @@ namespace ConsoleApplication
         public void Explode()
         {
             IsDead = true;
-            Console.WriteLine("boooom !! " + CurrentPassengers + " dudes dead in the explosion !!");
+            Console.WriteLine("boooom !! " + CurrentPassengers.Count + " dudes dead in the explosion !!");
         }
 
         public void Yolo()
@@ -39,10 +39,12 @@ namespace ConsoleApplication
 
         public void LoadPeople(IList<IDude> dudesList)
         {
-            if (dudesList.Count > PersonCap - CurrentPassengers.Count)
+            int nbpeop = PersonCap - CurrentPassengers.Count;
+            
+            if (dudesList.Count > nbpeop)
                 Console.WriteLine("Only " + PersonCap + " dudes can get in this vehicle");
 
-            for (var i = 0; i < PersonCap - CurrentPassengers.Count; i++)
+            for (var i = 0; i < nbpeop; i++)
             {
                 CurrentPassengers.Add(dudesList[i]);
                 Console.WriteLine(dudesList[i].Name + " gets in " + Model + ".");

@@ -4,7 +4,7 @@
     {
         string Name { get; set; }
         int Age { get; set; }
-        string Gender { get; set; }
+        Genders Gender { get; set; }
         int Weight { get; set; }
         string Nationality { get; set; }
         string NativeLanguage { get; set; }
@@ -12,5 +12,6 @@
 
         void WeightCheck();
         void Greet();
+        void ShowDudeInfo();
     }
 }

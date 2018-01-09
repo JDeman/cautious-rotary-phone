@@ -6,7 +6,7 @@ namespace ConsoleApplication
     {
         public string Name { get; set; }
         public int Age { get; set; }
-        public string Gender { get; set; }
+        public Genders Gender { get; set; } = Genders.Undeined;
         public int Weight { get; set; } = 80;
         public string Nationality { get; set; }
         public string NativeLanguage { get; set; }
@@ -28,6 +28,11 @@ namespace ConsoleApplication
                 Console.WriteLine(Name + " needs to drop some pounds.");
             else
                 Console.WriteLine(Name + " is in good shape.");
+        }
+
+        public void ShowDudeInfo()
+        {
+            Console.WriteLine(Name + " is a " + Nationality + " " + Job + " " + Gender + " who weighs " + Weight + " kg.");
         }
     }
 }

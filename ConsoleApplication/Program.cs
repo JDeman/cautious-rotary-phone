@@ -12,11 +12,9 @@ namespace ConsoleApplication
             var dudeBuilder = new DudeBuilder();
             var dudelist = dudeBuilder.getDudes();
 
-            Console.WriteLine("boat is a " + boat.Brand + " " + boat.Model +" and can hold " + boat.PersonCap + " dudes");
             DisplayDudeInfo(dudelist);
             StartJoyRide(ride, dudelist);
             StartJoyRide(boat, dudelist);
-            ShowDudesJobs(dudelist);
             Console.WriteLine("End.");
         }
 
@@ -24,8 +22,7 @@ namespace ConsoleApplication
         {
             foreach (var dude in dudelist)
             {
-                dude.Greet();
-                dude.WeightCheck();
+                dude.ShowDudeInfo();
             }
         }
 

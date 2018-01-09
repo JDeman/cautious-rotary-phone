@@ -12,7 +12,7 @@ namespace ConsoleApplication
         public string Brand { get; set; } = "Ramco";
         public string Model { get; set; } = "crusher";
         public string WheelSide { get; set; } = "center";
-        public IList<IDude> CurrentPassengers { get; set; }
+        public IList<IDude> CurrentPassengers { get; set; } = new List<IDude>();
         public bool IsDead { get; set; }
 
         public void TurnRight()
@@ -28,7 +28,7 @@ namespace ConsoleApplication
         public void Explode()
         {
             IsDead = true;
-            Console.WriteLine("boooom !! " + CurrentPassengers + " dudes dead and sinking in the depths !!");
+            Console.WriteLine("boooom !! " + CurrentPassengers.Count + " dudes dead and sinking in the depths !!");
         }
 
         public void Yolo()
@@ -38,20 +38,16 @@ namespace ConsoleApplication
 
         public void LoadPeople(IList<IDude> dudesList)
         {
-            if (dudesList.Count > PersonCap - CurrentPassengers.Count)
+            var nbpeop = PersonCap - CurrentPassengers.Count;
+            
+            if (dudesList.Count > nbpeop)
                 Console.WriteLine("Only " + PersonCap + " dudes can get in this vehicle");
 
-            for (var i = 0; i < PersonCap - CurrentPassengers.Count; i++)
+            for (var i = 0; i < nbpeop; i++)
             {
                 CurrentPassengers.Add(dudesList[i]);
                 Console.WriteLine(dudesList[i].Name + " gets in " + Model + ".");
             }
-        }
-        
-        public void waketch()
-        {
-            Console.WriteLine("sadewiz");
-            Console.WriteLine("wanamatcha");
         }
     }
 }
