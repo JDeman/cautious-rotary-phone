@@ -20,10 +20,12 @@ namespace ConsoleApplication
 
         public void WeightCheck()
         {
-            if (Weight > 120)
+            if (Weight < 70)
+                Console.WriteLine(Name + " get your ass to KFC right now!");
+            else if (Weight > 120)
                 Console.WriteLine(Name + " is bigger than Mobby Dick.");
             else if (Weight >= 100)
-                Console.WriteLine(Name + " you need to drop some pounds.");
+                Console.WriteLine(Name + " needs to drop some pounds.");
             else
                 Console.WriteLine(Name + " is in good shape.");
         }

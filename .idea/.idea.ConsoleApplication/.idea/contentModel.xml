@@ -12,6 +12,7 @@
         <e p="Car.cs" t="Include" />
         <e p="ConsoleApplication.csproj" t="IncludeRecursive" />
         <e p="Dude.cs" t="Include" />
+        <e p="DudeBuilder.cs" t="Include" />
         <e p="IDude.cs" t="Include" />
         <e p="IVehicle.cs" t="Include" />
         <e p="Jobs.cs" t="Include" />

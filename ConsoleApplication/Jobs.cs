@@ -18,6 +18,7 @@
         King,
         Contractor,
         Dealer,
-        Salesman
+        Salesman,
+        Chemist,
     }
 }

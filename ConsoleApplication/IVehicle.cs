@@ -10,13 +10,12 @@ namespace ConsoleApplication
         string Brand { get; set; }
         string Model { get; set; }
         string WheelSide { get; set; }
-        int CurrentPassengers { get; set; }
+        IList<IDude> CurrentPassengers { get; set; }
         bool IsDead { get; set; }
         
         void TurnRight();
         void TurnLeft();
-        void LoadPeople(IDude dude);
-        void LoadPeople(IEnumerable<IDude> dudesList);
+        void LoadPeople(IList<IDude> dudesList);
         void Explode();
         void Yolo();
     }

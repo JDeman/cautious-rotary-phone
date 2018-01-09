@@ -12,7 +12,7 @@ namespace ConsoleApplication
         public string Brand { get; set; } = "Ramco";
         public string Model { get; set; } = "crusher";
         public string WheelSide { get; set; } = "center";
-        public int CurrentPassengers { get; set; }
+        public IList<IDude> CurrentPassengers { get; set; }
         public bool IsDead { get; set; }
 
         public void TurnRight()
@@ -23,34 +23,6 @@ namespace ConsoleApplication
         public void TurnLeft()
         {
             Console.WriteLine("Boat is turning left!");
-        }
-
-        public void LoadPeople(IDude dude)
-        {
-            if (CurrentPassengers + 1 > PersonCap)
-            {
-                Console.WriteLine("Not enough space in the ride for 1 more dude, You have to swim!");
-            }
-            else
-            {
-                CurrentPassengers++;
-                Console.WriteLine("1 dude loaded in boat");
-            }
-        }
-
-        public void LoadPeople(IEnumerable<IDude> dudesList)
-        {
-            var enumerable = dudesList.ToList();
-            if (CurrentPassengers + enumerable.Count() > PersonCap)
-            {
-                Console.WriteLine("Not enough space in the ride for " + enumerable.Count() +
-                                  " more dudes, Ya'll have to swim!");
-            }
-            else
-            {
-                CurrentPassengers += enumerable.Count();
-                Console.WriteLine(enumerable.Count() + " dudes loaded in boat");
-            }
         }
 
         public void Explode()
@@ -64,6 +36,18 @@ namespace ConsoleApplication
             Console.WriteLine("Yolo Boat implementation");
         }
 
+        public void LoadPeople(IList<IDude> dudesList)
+        {
+            if (dudesList.Count > PersonCap - CurrentPassengers.Count)
+                Console.WriteLine("Only " + PersonCap + " dudes can get in this vehicle");
+
+            for (var i = 0; i < PersonCap - CurrentPassengers.Count; i++)
+            {
+                CurrentPassengers.Add(dudesList[i]);
+                Console.WriteLine(dudesList[i].Name + " gets in " + Model + ".");
+            }
+        }
+        
         public void waketch()
         {
             Console.WriteLine("sadewiz");
