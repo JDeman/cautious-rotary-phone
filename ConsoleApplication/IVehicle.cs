@@ -17,6 +17,5 @@ namespace ConsoleApplication
         void TurnLeft();
         void LoadPeople(IList<IDude> dudesList);
         void Explode();
-        void Yolo();
     }
 }

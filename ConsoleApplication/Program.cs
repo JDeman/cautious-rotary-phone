@@ -12,13 +12,13 @@ namespace ConsoleApplication
             var dudeBuilder = new DudeBuilder();
             var dudelist = dudeBuilder.getDudes();
 
-            DisplayDudeInfo(dudelist);
+            DisplayAllDudesInfo(dudelist);
             StartJoyRide(ride, dudelist);
             StartJoyRide(boat, dudelist);
             Console.WriteLine("End.");
         }
 
-        private static void DisplayDudeInfo(IList<IDude> dudelist)
+        private static void DisplayAllDudesInfo(IList<IDude> dudelist)
         {
             foreach (var dude in dudelist)
             {
@@ -32,15 +32,6 @@ namespace ConsoleApplication
             vehicle.TurnLeft();
             vehicle.TurnRight();
             vehicle.Explode();
-        }
-
-        private static void ShowDudesJobs(IList<IDude> dudelist)
-        {
-            foreach (var n in dudelist)
-                if (n.Job == Jobs.Unemployed)
-                    Console.WriteLine(n.Name + " is an " + n.Job + " sucker.");
-                else
-                    Console.WriteLine(n.Name + " is a " + n.Job + ".");
         }
     }
 }
