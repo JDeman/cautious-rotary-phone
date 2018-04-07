@@ -11,7 +11,7 @@ namespace ConsoleApplication
         string Model { get; set; }
         string WheelSide { get; set; }
         IList<IDude> CurrentPassengers { get; set; }
-        bool IsDead { get; set; }
+        bool IsWrecked { get; set; }
         
         void TurnRight();
         void TurnLeft();
