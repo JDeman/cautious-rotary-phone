@@ -14,7 +14,7 @@ namespace ConsoleApplication
         public string Brand { get; set; } = "Toyota";
         public string Model { get; set; } = "Tacoma";
         public string WheelSide { get; set; } = "right";
-        public bool IsDead { get; set; }
+        public bool IsWrecked { get; set; }
 
         public void TurnRight()
         {
@@ -28,7 +28,7 @@ namespace ConsoleApplication
 
         public void Explode()
         {
-            IsDead = true;
+            IsWrecked = true;
             Console.WriteLine("boooom !! " + CurrentPassengers.Count + " dudes dead in the explosion !!");
         }
 

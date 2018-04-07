@@ -13,7 +13,7 @@ namespace ConsoleApplication
         public string Model { get; set; } = "crusher";
         public string WheelSide { get; set; } = "center";
         public IList<IDude> CurrentPassengers { get; set; } = new List<IDude>();
-        public bool IsDead { get; set; }
+        public bool IsWrecked { get; set; }
 
         public void TurnRight()
         {
@@ -27,7 +27,7 @@ namespace ConsoleApplication
 
         public void Explode()
         {
-            IsDead = true;
+            IsWrecked = true;
             Console.WriteLine("boooom !! " + CurrentPassengers.Count + " dudes dead and sinking in the depths !!");
         }
 
