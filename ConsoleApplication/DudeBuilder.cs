@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApplication
 {
@@ -11,6 +12,7 @@ namespace ConsoleApplication
             /******** dudes creation ********/
             IDude joe = new Dude();
             joe.Nationality = "Canadian";
+            yellow();
             joe.Name = "Joe Black";
             joe.Job = Jobs.Lumberjack;
             joe.Gender = Genders.Man;
@@ -66,7 +68,14 @@ namespace ConsoleApplication
             list.Add(hank);
             list.Add(skyler);
 
+            Console.WriteLine(Environment.StackTrace);
+            
             return list;
+        }
+
+        private void yellow()
+        {
+            Console.WriteLine("yellow!!");
         }
     }
 }

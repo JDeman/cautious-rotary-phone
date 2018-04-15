@@ -15,7 +15,8 @@ namespace ConsoleApplication
             DisplayAllDudesInfo(dudelist);
             StartJoyRide(ride, dudelist);
             StartJoyRide(boat, dudelist);
-            Console.WriteLine("End.");
+//            Console.WriteLine(Environment.StackTrace);
+            Console.ReadLine();
         }
 
         private static void DisplayAllDudesInfo(IList<IDude> dudelist)

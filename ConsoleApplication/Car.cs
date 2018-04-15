@@ -31,10 +31,10 @@ namespace ConsoleApplication
             IsWrecked = true;
             Console.WriteLine("boooom !! " + CurrentPassengers.Count + " dudes dead in the explosion !!");
         }
-
+ 
         public void Yolo()
         {
-            Console.WriteLine("yolo");
+            Console.WriteLine("yolo car implementation");
         }
 
         public void LoadPeople(IList<IDude> dudesList)
