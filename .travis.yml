@@ -1,0 +1,8 @@
+language: csharp
+solution: ConsoleApplication.sln
+mono: none
+dotnet: 2.1.104
+script:
+  - dotnet restore
+  - dotnet build
+  - dotnet test ConsoleApplication.UnitTests/ConsoleApplication.UnitTests.csproj

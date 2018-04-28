@@ -10,7 +10,7 @@
         string NativeLanguage { get; set; }
         Jobs Job { get; set; }
 
-        void WeightCheck();
+        string WeightCheck();
         void Greet();
         void ShowDudeInfo();
     }

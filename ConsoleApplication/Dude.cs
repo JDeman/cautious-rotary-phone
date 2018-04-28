@@ -18,16 +18,20 @@ namespace ConsoleApplication
             Console.WriteLine("Hello I'm " + Name + ", I'm " + Nationality + ", nice to meet you.");
         }
 
-        public void WeightCheck()
+        public string WeightCheck()
         {
+            string res;
+            
             if (Weight < 70)
-                Console.WriteLine(Name + " get your ass to KFC right now!");
+                res = Name + " get your ass to KFC right now!";
             else if (Weight > 120)
-                Console.WriteLine(Name + " is bigger than Mobby Dick.");
+                res = Name + " is bigger than Mobby Dick.";
             else if (Weight >= 100)
-                Console.WriteLine(Name + " needs to drop some pounds.");
+                res = Name + " needs to drop some pounds.";
             else
-                Console.WriteLine(Name + " is in good shape.");
+                res = Name + " is in good shape.";
+
+            return res;
         }
 
         public void ShowDudeInfo()
