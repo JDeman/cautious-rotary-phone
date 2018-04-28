@@ -23,7 +23,7 @@ namespace ConsoleApplication.UnitTests
 
             var str = dude.WeightCheck();
 
-            Assert.Equal(str, "Paula s bigger than Mobby Dick.");
+            Assert.Equal(str, "Paula is bigger than Mobby Dick.");
         }
         
         [Fact]
